@@ -13,7 +13,17 @@
     <div class="slider">
         <div class="block_slider_1" >
             <div class="background">
-                <img src="../static/images/Back1.png" alt="" class="img_slider">
+
+                <img 
+                srcset="
+                ../static/images/Back1-phone.png 400w,
+                ../static/images/Back1.png 600w
+                " 
+                sizes="(max-width: 400px) 200px, 600px" 
+                src="../static/images/Back1.png" 
+                alt="" 
+                class="img_slider">
+
                 <div class="color_background-green">
                     <img src="../static/images/background2.png" alt="img_background">
                 </div>
@@ -58,7 +68,15 @@
 
         <div class="block_slider_2">
             <div class="background">
-                <img src="../static/images/Back2.png" alt="" class="img_slider">
+                <img 
+                srcset="
+                ../static/images/Back2-phone.png 400w,
+                ../static/images/Back2.png 600w
+                " 
+                sizes="(max-width: 400px) 200px, 600px" 
+                src="../static/images/Back2.png" 
+                alt="" 
+                class="img_slider">
                 <div class="color_background-blue">
                     <img src="../static/images/background2.png" alt="img_background">
                 </div>
@@ -103,7 +121,15 @@
 
         <div class="block_slider_3">
             <div class="background">
-                <img src="../static/images/Back3.png" alt="" class="img_slider">
+                <img 
+                srcset="
+                ../static/images/Back3-phone.png 400w,
+                ../static/images/Back3.png 600w
+                " 
+                sizes="(max-width: 400px) 200px, 600px" 
+                src="../static/images/Back3.png" 
+                alt="" 
+                class="img_slider">
                 <div class="color_background-purple">
                     <img src="../static/images/background2.png" alt="img_background">
                 </div>
@@ -207,11 +233,14 @@
             </div>
             <div class="forma">
                  <form action="post">
-                    <input type="text" placeholder="Имя" maxlength="20">
+                    <input type="text" placeholder="Вас зовут" maxlength="20">
                     <input type="text" id="phone" placeholder="+7 (___) ___-__-__" maxlength="18">
                     <button>Оставить заявку</button>
                 </form>
-                <span><p>Отправляя заявку, я соглашаюсь на обработку</p> <a href="#">персональных данных</a></span>
+                <div class="form-opis">
+                    <p class="consent-text">Отправляя заявку, я соглашаюсь на обработку <a href="#">персональных данных</a></p>
+                </div>
+                
             </div>
            
         </div>
